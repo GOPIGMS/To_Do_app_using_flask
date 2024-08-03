@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+</head>
+<body>
+    <h1>This is a simple todo app</h1>
+    <form action="" method="post">
+        <label for="taskss">Task:</label>
+          <input type="text" id="taskss" name="taskss" >
+          <input type="submit" value="create task">
+    </form>
+
+    <table border ="1">
+        <tr>
+        <th>
+            Tasks
+        </th>
+    </tr>
+        
+            {% for task in tasks %}
+            <tr>
+              <td> {{task}}</td>
+              <td><a href="{{url_for("edittask",task=task)}}">edit</a></td>
+              <td><a href="{{url_for("deletetask",task=task)}}">delete</a></td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
