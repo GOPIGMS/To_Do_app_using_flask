@@ -1,3 +1,4 @@
+
 # Flask To-Do List Application
 
 This is a simple Flask web application that allows users to manage a to-do list. The application uses MySQL to store tasks.
@@ -96,4 +97,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Flask](https://flask.palletsprojects.com/)
 - [Flask-MySQLdb](https://flask-mysqldb.readthedocs.io/en/latest/)
+
 
